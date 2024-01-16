@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@300;400;700;900&display=swap");
 
 * {
   margin: 0;
@@ -53,7 +53,11 @@ a {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient( to right, rgb(250, 232, 160), rgb(245, 171, 171) );
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 232, 160),
+    rgb(245, 171, 171)
+  );
 }
 
 .right-side {
@@ -74,7 +78,7 @@ a {
   padding: 100px;
   padding-left: 80px;
   align-items: center;
-font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 70px;
   font-weight: 700;
   letter-spacing: 10px;
@@ -88,7 +92,7 @@ font-family: 'Maven Pro', sans-serif;
   padding-bottom: 100px;
   display: flex;
   justify-content: flex-start;
-font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   color: black;
   font-weight: 400;
 }
@@ -101,7 +105,7 @@ font-family: 'Maven Pro', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   color: rgb(255, 255, 255);
   background-color: #f97272;
   font-weight: 300;
@@ -184,7 +188,7 @@ font-family: 'Maven Pro', sans-serif;
   padding-top: 30px;
   padding-bottom: 30px;
   align-items: center;
-font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: 10px;
@@ -193,7 +197,7 @@ font-family: 'Maven Pro', sans-serif;
 
 .buttom h2 {
   align-items: center;
-font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
@@ -201,14 +205,14 @@ font-family: 'Maven Pro', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 20px;
   font-weight: 400;
   background-color: #f97272;
   border: none;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
   .nav {
     display: flex;
     flex-wrap: nowrap;
@@ -268,7 +272,7 @@ font-family: 'Maven Pro', sans-serif;
     justify-content: flex-start;
     padding: 100px;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 10px;
@@ -280,7 +284,7 @@ font-family: 'Maven Pro', sans-serif;
     font-size: 30px;
     display: flex;
     justify-content: flex-start;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: black;
     font-weight: 400;
     padding-right: 20px;
@@ -291,7 +295,7 @@ font-family: 'Maven Pro', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: rgb(255, 255, 255);
     background-color: #f97272;
     font-weight: 300;
@@ -307,7 +311,7 @@ font-family: 'Maven Pro', sans-serif;
     height: 500px;
     width: 90%;
     padding-left: 100px;
-    padding-bottom: 20px ;
+    padding-bottom: 20px;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -362,7 +366,7 @@ font-family: 'Maven Pro', sans-serif;
     padding-top: 30px;
     padding-bottom: 30px;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -371,7 +375,7 @@ font-family: 'Maven Pro', sans-serif;
 
   .buttom h2 {
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 25px;
     font-weight: 400;
   }
@@ -379,14 +383,13 @@ font-family: 'Maven Pro', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 15px;
     font-weight: 400;
     background-color: #f97272;
     border: none;
   }
 }
-
 
 @media (max-width: 991px) {
   .nav {
@@ -446,7 +449,7 @@ font-family: 'Maven Pro', sans-serif;
     justify-content: flex-start;
     padding: 100px;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 10px;
@@ -458,7 +461,7 @@ font-family: 'Maven Pro', sans-serif;
     font-size: 30px;
     display: flex;
     justify-content: flex-start;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: black;
     font-weight: 400;
     padding-right: 20px;
@@ -469,7 +472,7 @@ font-family: 'Maven Pro', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: rgb(255, 255, 255);
     background-color: #f97272;
     font-weight: 300;
@@ -540,7 +543,7 @@ font-family: 'Maven Pro', sans-serif;
     padding-top: 30px;
     padding-bottom: 30px;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -549,7 +552,7 @@ font-family: 'Maven Pro', sans-serif;
 
   .buttom h2 {
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 20px;
     font-weight: 400;
   }
@@ -557,7 +560,7 @@ font-family: 'Maven Pro', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 15px;
     font-weight: 400;
     background-color: #f97272;
@@ -610,8 +613,6 @@ font-family: 'Maven Pro', sans-serif;
     cursor: pointer;
   }
 
-
-
   .nav-closed .nav,
   a {
     display: flex;
@@ -647,7 +648,7 @@ font-family: 'Maven Pro', sans-serif;
     justify-content: flex-start;
     padding: 100px;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 50px;
     font-weight: 700;
     letter-spacing: 10px;
@@ -659,7 +660,7 @@ font-family: 'Maven Pro', sans-serif;
     font-size: 20px;
     display: flex;
     justify-content: flex-start;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: black;
     font-weight: 400;
     padding: 80px 90px;
@@ -670,7 +671,7 @@ font-family: 'Maven Pro', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: rgb(255, 255, 255);
     background-color: #f97272;
     font-weight: 300;
@@ -740,7 +741,7 @@ font-family: 'Maven Pro', sans-serif;
     padding-top: 30px;
     padding-bottom: 30px;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -749,7 +750,7 @@ font-family: 'Maven Pro', sans-serif;
 
   .buttom h2 {
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 15px;
     font-weight: 400;
   }
@@ -757,7 +758,7 @@ font-family: 'Maven Pro', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 15px;
     font-weight: 400;
     background-color: #f97272;
@@ -765,7 +766,7 @@ font-family: 'Maven Pro', sans-serif;
   }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
   .nav {
     display: flex;
     flex-wrap: nowrap;
@@ -845,7 +846,7 @@ font-family: 'Maven Pro', sans-serif;
     justify-content: flex-start;
     padding: 150px;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 60px;
     font-weight: 700;
     letter-spacing: 10px;
@@ -857,7 +858,7 @@ font-family: 'Maven Pro', sans-serif;
     font-size: 20px;
     display: flex;
     justify-content: flex-start;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: black;
     font-weight: 400;
     padding: 50px;
@@ -869,7 +870,7 @@ font-family: 'Maven Pro', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: rgb(255, 255, 255);
     background-color: #f97272;
     font-weight: 300;
@@ -938,7 +939,7 @@ font-family: 'Maven Pro', sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -947,7 +948,7 @@ font-family: 'Maven Pro', sans-serif;
 
   .buttom h2 {
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 15px;
     font-weight: 400;
   }
@@ -955,7 +956,7 @@ font-family: 'Maven Pro', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 10px;
     font-weight: 400;
     background-color: #f97272;
@@ -963,7 +964,7 @@ font-family: 'Maven Pro', sans-serif;
   }
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px) {
   .nav {
     display: flex;
     flex-wrap: nowrap;
@@ -1044,7 +1045,7 @@ font-family: 'Maven Pro', sans-serif;
     justify-content: flex-start;
     padding: 80px;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 60px;
     font-weight: 700;
     letter-spacing: 10px;
@@ -1056,7 +1057,7 @@ font-family: 'Maven Pro', sans-serif;
     font-size: 20px;
     display: flex;
     justify-content: flex-start;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: black;
     font-weight: 400;
     padding: 50px;
@@ -1068,7 +1069,7 @@ font-family: 'Maven Pro', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     color: rgb(255, 255, 255);
     background-color: #f97272;
     font-weight: 300;
@@ -1112,16 +1113,15 @@ font-family: 'Maven Pro', sans-serif;
 
   .left .one .top {
     padding: 10px;
-    width: 300px; 
-    height: 300px; 
+    width: 300px;
+    height: 300px;
   }
   .left .one .down {
     padding: 10px;
-    width: 300px; 
-    height: 300px; 
+    width: 300px;
+    height: 300px;
   }
 
-  
   .section .right {
     width: 80%;
     height: 500px;
@@ -1147,7 +1147,7 @@ font-family: 'Maven Pro', sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 5px;
@@ -1156,7 +1156,7 @@ font-family: 'Maven Pro', sans-serif;
 
   .buttom h2 {
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 15px;
     font-weight: 400;
   }
@@ -1164,13 +1164,13 @@ font-family: 'Maven Pro', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-  font-family: 'Maven Pro', sans-serif;
+    font-family: "Maven Pro", sans-serif;
     font-size: 20px;
     font-weight: 400;
     background-color: #f97272;
     border: none;
   }
-  .btn-two img{
+  .btn-two img {
     width: 15px;
     height: 15px;
   }
