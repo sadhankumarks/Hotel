@@ -235,7 +235,6 @@ a {
   a {
     display: flex;
     flex-wrap: nowrap;
-    height: 60px;
     align-items: center;
     align-content: space-between;
     justify-content: space-evenly;
