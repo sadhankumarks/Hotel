@@ -645,7 +645,7 @@ a {
   .right-side h1 {
     display: flex;
     justify-content: flex-start;
-    padding: 100px;
+    padding: 60px 0 40px 80px;
     align-items: center;
     font-family: "Maven Pro", sans-serif;
     font-size: 50px;
