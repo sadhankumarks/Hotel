@@ -1013,7 +1013,7 @@ li{
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media  (max-width: 480px) {
   body {
     overflow-x: hidden;
     overflow-y: auto;
@@ -1086,18 +1086,17 @@ li{
   .right-side h1 {
     display: flex;
     justify-content: flex-start;
-    padding-left: 100px;
     align-items: center;
     font-family: "Maven Pro", sans-serif;
-    font-size: 40px;
+    font-size: 150%;
     font-weight: 700;
     letter-spacing: 10px;
     color: black;
-  }
+}
 
   .right-side p {
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     justify-content: flex-start;
     font-family: "Maven Pro", sans-serif;
@@ -1116,7 +1115,7 @@ li{
     color: rgb(255, 255, 255);
     background-color: #f97272;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 10px;
     border: none;
   }
 
@@ -1129,8 +1128,8 @@ li{
   }
 
   .left-side img {
-    height: 400px;
-    width: 400px;
+    height: 80%;
+    width: 100%;
     margin-right: 65px;
     align-items: center;
     background-repeat: no-repeat;
@@ -1145,9 +1144,11 @@ li{
   }
 
   .left {
-    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
   }
   .one {
     display: flex;
@@ -1156,22 +1157,27 @@ li{
 
   .left .one .top {
     padding: 10px;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 80%;
   }
   .left .one .down {
     padding: 10px;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 80%;
+  }
+
+  .left .side{
+    width: 100%;
+    height: 80%;
   }
 
   .section .right {
-    width: 80%;
-    height: 400px;
+    width: 100%;
+    padding-left: 22%;
+    padding-right: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 100px;
     align-content: center;
     flex-direction: row;
   }
@@ -1194,7 +1200,7 @@ li{
     padding-bottom: 20px;
     align-items: center;
     font-family: "Maven Pro", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 5px;
     color: black;
@@ -1203,7 +1209,7 @@ li{
   .buttom h2 {
     align-items: center;
     font-family: "Maven Pro", sans-serif;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 400;
   }
   .buttom .btn-two {
@@ -1211,7 +1217,7 @@ li{
     justify-content: center;
     align-items: center;
     font-family: "Maven Pro", sans-serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     background-color: #f97272;
     border: none;
@@ -1219,5 +1225,226 @@ li{
   .btn-two img {
     width: 15px;
     height: 15px;
+  }
+}
+
+@media  (max-width: 260px){
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .menu-icon-img {
+    display: block;
+  }
+
+  #check {
+    position: absolute;
+    opacity: 0;
+  }
+
+  #check:checked ~ .nav-list {
+    right: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    z-index: 1;
+    color: black;
+    justify-content: center;
+    transition: right 0.5s ease-in-out;
+    background-color: #f97272;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  #check:checked ~ .content {
+    transform: translateY(40vh);
+  }
+  .right-side {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .right-side h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 50%;
+    padding-left: 30%;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: black;
+    align-content: flex-start;
+}
+
+  .right-side p {
+    width: 100%;
+    font-size: 60%;
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Maven Pro", sans-serif;
+    color: black;
+    font-weight: 400;
+    padding: 0 50px;
+
+  }
+  .right-side .btn{
+    
+    width: 100%;
+  }
+   
+  .right-side button {
+    width: 30%;
+    height: 40%;
+    padding-bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Maven Pro", sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #f97272;
+    font-weight: 300;
+    font-size: 40%;
+    border: none;
+}
+
+  .left-side {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-side img {
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .one {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left .one .top {
+    padding: 10px;
+    width: 100%;
+    height: 80%;
+  }
+  .left .one .down {
+    padding: 10px;
+    width: 100%;
+    height: 80%;
+  }
+
+  .left .side{
+    width: 100%;
+    height: 80%;
+  }
+
+  .section .right {
+    width: 100%;
+    padding-left: 22%;
+    padding-right: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+  }
+
+  .buttom {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    height: 260px;
+    background-color: #f97272;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .buttom h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 50%;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: black;
+  }
+
+  .buttom h2 {
+    align-items: center;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 50%;
+    font-weight: 400;
+  }
+  .buttom .btn-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Maven Pro", sans-serif;
+    font-size: 50%;
+    font-weight: 400;
+    background-color: #f97272;
+    border: none;
+  }
+  .btn-two img {
+    width: 5%;
+    height: 5%;
   }
 }
