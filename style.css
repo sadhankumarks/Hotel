@@ -475,7 +475,7 @@ a {
 
   .right-side p {
     width: 100%;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     justify-content: flex-start;
     font-family: "Maven Pro", sans-serif;
@@ -859,7 +859,7 @@ a {
     padding-left: 150px;
     align-items: center;
     font-family: "Maven Pro", sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 10px;
     color: black;
@@ -1074,7 +1074,7 @@ a {
     padding-left: 100px;
     align-items: center;
     font-family: "Maven Pro", sans-serif;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     letter-spacing: 10px;
     color: black;
