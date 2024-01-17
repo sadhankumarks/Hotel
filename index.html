@@ -8,10 +8,18 @@
   </head>
 
   <body>
-    <div class="nav nav-closed">
-      <div class="menu-bar" onclick="toggleMenu()">
-        <img src="menu-bar.png" width="30px" height="30px" alt="menu-bar" />
-      </div>
+    <div class="nav">
+      <label for="check" class="menu-icon">
+        <img
+          src="menu-bar.png"
+          class="menu-icon-img"
+          width="30px"
+          height="30px"
+          alt="menu-bar"
+        />
+      </label>
+      <input type="checkbox" id="check" />
+
       <ul class="nav-list">
         <li><a href="#">Home</a></li>
         <li><a href="#">Order</a></li>
@@ -22,7 +30,7 @@
       </ul>
     </div>
 
-    <div class="content">
+    <div class="content visible">
       <div class="right-side">
         <h1>LOREM IPSUM</h1>
         <p>
@@ -31,21 +39,26 @@
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat. Duis aute irure dolor in
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. 
+          pariatur.
         </p>
         <div class="btn">
-        <button >Click Me</button>
-      </div>
+          <button>Click Me</button>
+        </div>
       </div>
 
       <div class="left-side">
         <img
           class="left-side"
           src="pexels-robin-stickel-70497.jpg"
-          alt="food" width="100%" height="999px"
+          width="100%"
+          height="100%"
+          alt="food"
+          class="img"
         />
       </div>
     </div>
+
+    <div id="space"></div>
 
     <div class="section">
       <div class="left">

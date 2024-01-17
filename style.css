@@ -30,6 +30,7 @@ li {
 .nav,
 a {
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: nowrap;
   align-content: space-between;
   justify-content: space-evenly;
@@ -40,12 +41,16 @@ a {
   letter-spacing: 6px;
   cursor: pointer;
 }
-
-.menu-bar {
+#check {
   display: none;
 }
 
+.menu-bar {
+  display: block;
+}
+
 .content {
+  padding-bottom: 50px;
   width: 100%;
   height: 1000px;
   display: flex;
@@ -61,21 +66,16 @@ a {
 }
 
 .right-side {
-  background-image: linear-gradient(
-    to right,
-    rgb(250, 232, 160),
-    rgb(245, 171, 171)
-  );
   display: flex;
   width: 50%;
-  height: 1000px;
+  height: 100%;
   flex-direction: column;
 }
 
 .right-side h1 {
   display: flex;
   justify-content: flex-start;
-  padding: 100px;
+  padding: 80px;
   padding-left: 80px;
   align-items: center;
   font-family: "Maven Pro", sans-serif;
@@ -89,7 +89,7 @@ a {
   width: 80%;
   font-size: 30px;
   padding-left: 80px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: flex-start;
   font-family: "Maven Pro", sans-serif;
@@ -118,13 +118,22 @@ a {
 }
 
 .left-side img {
-  height: 995px;
+  padding-top: 53px;
   width: 100%;
+  height: 1053px;
   position: relative;
   object-fit: cover;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+}
+.btn {
+  padding-top: 50px;
+}
+
+#space {
+  height: 10px;
+  background-color: white;
 }
 
 .section {
@@ -140,7 +149,8 @@ a {
 
 .left {
   width: 50%;
-  padding: 200px;
+  padding: 50px;
+  padding-top: 150px;
   position: relative;
   display: flex;
 }
@@ -169,6 +179,7 @@ a {
 .section .right {
   width: 50%;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -227,13 +238,16 @@ a {
     align-items: center;
     font-family: "Playfair Display", serif;
   }
-
+  #check {
+    display: none;
+  }
   li {
     padding: 15px;
   }
   .nav,
   a {
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-items: center;
     align-content: space-between;
@@ -247,7 +261,7 @@ a {
   }
 
   .menu-bar {
-    display: none;
+    display: block;
   }
 
   .content {
@@ -412,6 +426,7 @@ a {
   .nav,
   a {
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-content: space-between;
     justify-content: space-evenly;
@@ -422,9 +437,12 @@ a {
     letter-spacing: 5px;
     cursor: pointer;
   }
+  #check {
+    display: none;
+  }
 
   .menu-bar {
-    display: none;
+    display: block;
   }
 
   .content {
@@ -568,61 +586,53 @@ a {
 }
 
 @media (max-width: 881px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0;
+  }
+
   .nav {
     display: flex;
-    flex-wrap: nowrap;
-    background-color: #f97272;
-    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
   }
 
-  .nav-closed .nav-list {
-    display: none;
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
   }
 
-  .nav-closed .menu-bar {
+  .menu-icon-img {
     display: block;
   }
-  .nav,
-  ul,
-  li {
+
+  #check {
+    position: absolute;
+    opacity: 0;
+  }
+
+  #check:checked ~ .nav-list {
+    right: 0;
+  }
+
+  .nav-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Playfair Display", serif;
-  }
-
-  li {
-    padding: 15px;
-  }
-  .nav,
-  a {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-between;
-    justify-content: space-evenly;
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    z-index: 1;
     color: black;
-    font-size: 40px;
-    letter-spacing: 5px;
-  }
-
-  .menu-bar {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav-closed .nav,
-  a {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-between;
-    justify-content: space-evenly;
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
-    color: black;
-    font-size: 20px;
-    letter-spacing: 5px;
+    justify-content: center;
+    transition: right 0.5s ease-in-out;
+    background-color: #f97272;
   }
 
   .content {
@@ -633,6 +643,11 @@ a {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  #check:checked ~ .content {
+    transform: translateY(40vh);
   }
 
   .right-side {
@@ -706,6 +721,7 @@ a {
     width: 100%;
     height: 600px;
   }
+
   .one {
     display: flex;
     flex-direction: column;
@@ -753,6 +769,7 @@ a {
     font-size: 15px;
     font-weight: 400;
   }
+
   .buttom .btn-two {
     display: flex;
     justify-content: center;
@@ -766,61 +783,53 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0;
+  }
+
   .nav {
     display: flex;
-    flex-wrap: nowrap;
-    background-color: #f97272;
-    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
   }
 
-  .nav-closed .nav-list {
-    display: none;
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
   }
 
-  .nav-closed .menu-bar {
+  .menu-icon-img {
     display: block;
   }
-  .nav,
-  ul,
-  li {
+
+  #check {
+    position: absolute;
+    opacity: 0;
+  }
+
+  #check:checked ~ .nav-list {
+    right: 0;
+  }
+
+  .nav-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Playfair Display", serif;
-  }
-
-  li {
-    padding: 15px;
-  }
-  .nav,
-  a {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-between;
-    justify-content: space-evenly;
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    z-index: 1;
     color: black;
-    font-size: 20px;
-    letter-spacing: 5px;
-  }
-
-  .menu-bar {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav-closed .nav,
-  a {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-between;
-    justify-content: space-evenly;
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
-    color: black;
-    font-size: 15px;
-    letter-spacing: 5px;
+    justify-content: center;
+    transition: right 0.5s ease-in-out;
+    background-color: #f97272;
   }
 
   .content {
@@ -831,6 +840,11 @@ a {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  #check:checked ~ .content {
+    transform: translateY(40vh);
   }
 
   .right-side {
@@ -863,12 +877,12 @@ a {
     padding-bottom: 100px;
   }
 
-.right-side .btn{
-   display: flex;
+  .right-side .btn {
+    display: flex;
     padding-right: 60px;
     justify-content: center;
     align-items: center;
- }
+  }
   .right-side button {
     width: 40%;
     display: flex;
@@ -928,13 +942,11 @@ a {
     width: 250px;
     height: 250px;
   }
-  .left .side{
+  .left .side {
     padding: 10px;
     width: 300px;
     height: 400px;
   }
-  
-  
 
   .section .right {
     width: 80%;
@@ -987,62 +999,53 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: 0;
+  }
+
   .nav {
     display: flex;
-    flex-wrap: nowrap;
-    background-color: #f97272;
-    width: 80%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
   }
 
-  .nav-closed .nav-list {
-    display: none;
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
   }
 
-  .nav-closed .menu-bar {
+  .menu-icon-img {
     display: block;
   }
-  .nav,
-  ul,
-  li {
+
+  #check {
+    position: absolute;
+    opacity: 0;
+  }
+
+  #check:checked ~ .nav-list {
+    right: 0;
+  }
+
+  .nav-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Playfair Display", serif;
-  }
-
-  li {
-    padding: 15px;
-  }
-  .nav,
-  a {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-between;
-    justify-content: space-evenly;
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    z-index: 1;
     color: black;
-    font-size: 20px;
-    letter-spacing: 5px;
-  }
-
-  .menu-bar {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav-closed .nav,
-  a {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-between;
-    justify-content: space-evenly;
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
-    color: black;
-    font-size: 15px;
-    letter-spacing: 5px;
+    justify-content: center;
+    transition: right 0.5s ease-in-out;
+    background-color: #f97272;
   }
 
   .content {
@@ -1053,8 +1056,12 @@ a {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    transition: transform 0.5s ease-in-out;
   }
 
+  #check:checked ~ .content {
+    transform: translateY(40vh);
+  }
   .right-side {
     display: flex;
     width: 100%;
@@ -1064,7 +1071,7 @@ a {
   .right-side h1 {
     display: flex;
     justify-content: flex-start;
-    padding: 80px;
+    padding-left: 100px;
     align-items: center;
     font-family: "Maven Pro", sans-serif;
     font-size: 60px;
