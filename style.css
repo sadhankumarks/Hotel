@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;800;900&family=Roboto:wght@300;400;700;900&display=swap");
 
 * {
   margin: 0;
@@ -14,6 +14,7 @@
   flex-wrap: nowrap;
   background-color: #f97272;
   width: 100%;
+  height: 40px;
 }
 
 .nav,
@@ -35,9 +36,9 @@ a {
   align-content: space-between;
   justify-content: space-evenly;
   font-family: "Playfair Display", serif;
-  font-weight: 900;
+  font-weight: 700;
   color: black;
-  font-size: 25px;
+  font-size: 16px;
   letter-spacing: 6px;
   cursor: pointer;
 }
@@ -50,9 +51,8 @@ a {
 }
 
 .content {
-  padding-bottom: 50px;
   width: 100%;
-  height: 1000px;
+  height: 600px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -75,11 +75,12 @@ a {
 .right-side h1 {
   display: flex;
   justify-content: flex-start;
-  padding: 80px;
+  padding: 60px;
   padding-left: 80px;
+  padding-top: 150px;
   align-items: center;
   font-family: "Maven Pro", sans-serif;
-  font-size: 70px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 10px;
   color: black;
@@ -87,9 +88,9 @@ a {
 
 .right-side p {
   width: 80%;
-  font-size: 30px;
+  font-size: 18px;
   padding-left: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   display: flex;
   justify-content: flex-start;
   font-family: "Maven Pro", sans-serif;
@@ -98,8 +99,8 @@ a {
 }
 
 .right-side button {
-  width: 25%;
-  height: 80px;
+  width: 35%;
+  height: 40px;
   padding: 20px;
   margin-left: 80px;
   display: flex;
@@ -108,8 +109,8 @@ a {
   font-family: "Maven Pro", sans-serif;
   color: rgb(255, 255, 255);
   background-color: #f97272;
-  font-weight: 300;
-  font-size: 30px;
+  font-weight: 100;
+  font-size: 15px;
   border: none;
 }
 
@@ -118,14 +119,10 @@ a {
 }
 
 .left-side img {
-  padding-top: 53px;
+  margin-top: 4px;
   width: 100%;
-  height: 1053px;
-  position: relative;
+  height: 600px;
   object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 .btn {
   padding-top: 50px;
@@ -133,11 +130,11 @@ a {
 
 #space {
   height: 10px;
-  background-color: white;
+  background-color: black;
 }
 
 .section {
-  height: 800px;
+  height: 650px;
   display: flex;
   flex-direction: row;
   background-image: linear-gradient(
@@ -200,7 +197,7 @@ a {
   padding-bottom: 30px;
   align-items: center;
   font-family: "Maven Pro", sans-serif;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   letter-spacing: 10px;
   color: black;
@@ -283,7 +280,8 @@ a {
   .right-side h1 {
     display: flex;
     justify-content: flex-start;
-    padding: 100px;
+    padding-right: 60px;
+    padding-top: 50px;
     align-items: center;
     font-family: "Maven Pro", sans-serif;
     font-size: 50px;
@@ -294,6 +292,7 @@ a {
 
   .right-side p {
     width: 100%;
+    padding-bottom: 20px;
     font-size: 30px;
     display: flex;
     justify-content: flex-start;
@@ -313,7 +312,11 @@ a {
     background-color: #f97272;
     font-weight: 300;
     font-size: 30px;
+    padding-bottom: 30px;
     border: none;
+  }
+  .btn{
+    padding-bottom: 40px;
   }
 
   .left-side {
@@ -321,9 +324,9 @@ a {
   }
 
   .left-side img {
-    height: 500px;
-    width: 90%;
-    padding-left: 100px;
+    height: 450px;
+    width: 80%;
+    padding-left: 80px;
     padding-bottom: 20px;
     align-items: center;
     background-repeat: no-repeat;
@@ -367,6 +370,7 @@ a {
   .buttom {
     align-items: center;
     display: flex;
+    margin-left: 125px;
     width: 100%;
     background-color: #f97272;
     flex-direction: column;
@@ -433,7 +437,7 @@ a {
     font-family: "Playfair Display", serif;
     font-weight: 900;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 5px;
     cursor: pointer;
   }
@@ -464,7 +468,7 @@ a {
   .right-side h1 {
     display: flex;
     justify-content: flex-start;
-    padding: 100px;
+    padding: 90px 0 90px 80px;
     align-items: center;
     font-family: "Maven Pro", sans-serif;
     font-size: 50px;
@@ -549,6 +553,7 @@ a {
     align-items: center;
     display: flex;
     width: 100%;
+    margin-left: 95px;
     background-color: #f97272;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -653,7 +658,7 @@ a {
   .right-side {
     display: flex;
     width: 100%;
-    height: 800px;
+    height: 600px;
     flex-direction: column;
   }
 
@@ -689,7 +694,7 @@ a {
     color: rgb(255, 255, 255);
     background-color: #f97272;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 15px;
     border: none;
   }
 
@@ -729,8 +734,12 @@ a {
 
   .left .one .top {
     padding: 10px;
+    width: 200px;
   }
-
+   
+  .left .one .down {
+    width: 200px;
+  }
   .section .right {
     width: 80%;
     height: 500px;
@@ -746,6 +755,7 @@ a {
     align-items: flex-start;
     display: flex;
     width: 100%;
+    margin-left: 110px;
     background-color: #f97272;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -856,7 +866,6 @@ a {
   .right-side h1 {
     display: flex;
     justify-content: flex-start;
-    padding-left: 150px;
     align-items: center;
     font-family: "Maven Pro", sans-serif;
     font-size: 50px;
@@ -873,8 +882,8 @@ a {
     font-family: "Maven Pro", sans-serif;
     color: black;
     font-weight: 400;
-    padding: 0 30px;
-    padding-bottom: 100px;
+    padding: 0 50px;
+    padding-bottom: 50px;
   }
 
   .right-side .btn {
@@ -963,6 +972,7 @@ a {
     align-items: flex-start;
     display: flex;
     width: 100%;
+    margin-left: 50px;
     background-color: #f97272;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1082,14 +1092,14 @@ a {
 
   .right-side p {
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     justify-content: flex-start;
     font-family: "Maven Pro", sans-serif;
     color: black;
     font-weight: 400;
-    padding: 50px;
-    padding-bottom: 50px;
+    padding: 0 50px;
+
   }
 
   .right-side button {
@@ -1165,7 +1175,9 @@ a {
     align-items: flex-start;
     display: flex;
     width: 100%;
+    margin-left: 0;
     height: 260px;
+    margin-left: 0px;
     background-color: #f97272;
     flex-direction: column;
     flex-wrap: nowrap;
