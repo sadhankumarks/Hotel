@@ -74,12 +74,13 @@ a {
 
 .right-side h1 {
   display: flex;
+  padding: 50px;
   justify-content: flex-start;
   padding-left: 80px;
   padding-top: 150px;
   align-items: center;
   font-family: "Maven Pro", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 700;
   letter-spacing: 10px;
   color: black;
